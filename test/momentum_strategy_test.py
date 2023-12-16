@@ -1,7 +1,11 @@
 import unittest
 import pandas as pd
-from strategy import MomentumStrategy
-from data_handler import DataHandler
+import sys
+ 
+# setting path
+sys.path.append('../quant_backtesting_framework')
+from quant_backtesting_framework.strategy import MomentumStrategy
+from quant_backtesting_framework.data_handler import DataHandler
 
 class TestMomentumStrategy(unittest.TestCase):
     def setUp(self):
